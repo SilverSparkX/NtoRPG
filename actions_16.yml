@@ -4624,4 +4624,4 @@ actions:
         display-name: PERGAMINO PROHIBIDO
   ClonDeSombraAvestruz:
     commands:
-    - mm m spawn Avestruz 2 world3,1364,116,-1715
+    - mm m spawn Avestruz 1 world3,1364,116,-1715
