@@ -4627,4 +4627,4 @@ actions:
     - mm m spawn Avestruz 2 world3,1364,116,-1715
   KushinaCurarJugador:
     commands:
-    - heal <palyer>
+    - heal <player>
