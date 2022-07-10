@@ -4625,6 +4625,3 @@ actions:
   ClonDeSombraAvestruz:
     commands:
     - mm m spawn Avestruz 2 world3,1364,116,-1715
-  KushinaCurarPlayer:
-    commands:
-    - heal <player>
