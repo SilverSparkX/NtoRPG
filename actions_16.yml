@@ -4626,5 +4626,9 @@ actions:
     commands:
     - mm m spawn Avestruz 1 world3,1364,116,-1715
   KushinaCurar:
-    commands:
-    - heal <player>
+    potion-effect-types:
+    - REGENERATION
+    potion-effect-durations:
+    - 10
+    potion-effect-amplifiers:
+    - 5
