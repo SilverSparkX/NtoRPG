@@ -1,0 +1,4627 @@
+actions:
+  ApplyPotion:
+    message: <blue>You received potion effects!
+    potion-effect-types:
+    - Speed
+    - Jump
+    potion-effect-durations:
+    - 100
+    - 25
+    potion-effect-amplifiers:
+    - 3
+    - 2
+  NiceFinish:
+    message: <green>Nice work!
+  DeathFail:
+    fail-quest: true
+  RodStart:
+    message: <yellow>Type 'rod' in chat to get a fishing rod!
+  TimerStart:
+    timer: 40
+  CancelTimer:
+    cancel-timer: true
+  RunCommand:
+    message: <red>Did you mean 'help'?
+    commands:
+    - help
+  PergaminoEstudio:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        display-name: Pergamino de Estudio
+        lore:
+        - §p§e§r§g§a§m§i§n§o§e§s§t§u§d§i§o
+  PergaminoA:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: Pergamino A
+  PergaminoB:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: Pergamino B
+  PergaminoC:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: Pergamino C
+  PergaminoD:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: Pergamino D
+  PergaminoE:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: Pergamino E
+  PergaminoFin:
+    message: §aHere you go!
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        display-name: Pergamino Final
+        lore:
+        - §p§e§r§g§a§m§i§n§o§f§i§n§a§l
+  Crips:
+    potion-effect-types:
+    - LEVITATION
+    potion-effect-durations:
+    - 600
+    potion-effect-amplifiers:
+    - 10
+    timer: 10
+  DarLentes:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: STAINED_CLAY
+      damage: 9
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §7§lLENTES
+        lore:
+        - §2Usar /hat
+        - §l§e§n§t§e§s
+  DarPiedrasPreciosas:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: §lPiedra Preciosa
+        lore:
+        - Piedra preciosa encontrada en el fondo de la cascada (Quest Item)
+  Reconocimientochojuro:
+    mob-spawns:
+      '0':
+        name: §4§lRenegado
+        spawn-location: EntradaMazmorras -336.0 54.0 487.0
+        mob-type: ZOMBIE
+        spawn-amounts: 5
+    teleport-location: EntradaMazmorras -336.0 54.0 464.0
+  MatarRenegados:
+    mob-spawns:
+      '0':
+        name: §4§lRenegados
+        spawn-location: EntradaMazmorras -336.0 55.0 486.0
+        mob-type: ZOMBIE
+        spawn-amounts: 5
+  Volverconchojuro:
+    teleport-location: Final 283.0 41.0 -2344.0
+  PergaminoParaChojuro:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        display-name: §3Pergamino de chojuro
+  Pendienteschojuro:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: PRISMARINE_CRYSTALS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §3Pendientes
+  PergaSellos:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        display-name: §3Pergamino para Chojuro
+  DarVasijaVacia:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: FLOWER_POT_ITEM
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        display-name: §8§lVasija
+        lore:
+        - (Quest Item)
+        blockMaterial: FLOWER_POT_ITEM
+  GiveCollarMagatama:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: PAINTING
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: Collar Magatama
+        lore:
+        - (Quest Item)
+  GivePergaminoRecetaVeneno:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: Receta de veneno
+        lore:
+        - (Quest Item)
+  bolanegra:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        display-name: §lPergamino tormenta
+  Musubo:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: GLASS_BOTTLE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §lCristal Catalizador
+        lore:
+        - §c§r§i§s§t§a§l
+  QuestFin:
+    commands:
+    - pex user <player> remove enquest.on
+  QuestInicio:
+    commands:
+    - pex user <player> add enquest.on
+    - pex user <player> add Wasa
+  DeidaraPergaminoFeudal:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §oPergamino
+  '1':
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §oPergamino
+  PergaminoHyuga:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        display-name: §f§lPergamino Hyuga
+        lore:
+        - §p§e§r§g§a§m§i§n§o§h§y§u§g§a
+  PergaminoHyugaEntregado: {}
+  MisionHinataHyuga5:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: PAPER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §lInformacion de la aldea
+  ZabusaKamitsu:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: STONE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §7§lKAMITSU
+  PergaminosImportantes:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      amount: 40
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: Pergamino Importante
+        lore:
+        - §p§e§r§g§a§m§i§n§o§f
+  Pergaminoraro:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      amount: 30
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: Pergamino Raro
+        lore:
+        - §p§e§r§g§a§m§i§n§o§f
+  Tests:
+    commands:
+    - npc spawn 9745
+  Tiempo:
+    timer: 30
+  SpawnBandidos:
+    commands:
+    - mythicmobs mobs spawn Bandido 10 world3,900,64,1430
+  Lentesanciano:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: STAINED_CLAY
+      damage: 9
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §lLentes del Anciano
+        lore:
+        - §l§e§n§t§e§s§a§n§c§i§a§n§o
+  KimimaroInquestRotacionInvestigacion:
+    clear-inventory: true
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §lINVESTIGACION OROCHIMARU
+        lore:
+        - (Quest Item)
+  GiveFukiya:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: STONE_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §5§lFukiya
+        lore:
+        - (Quest Item)
+  BandidosDaiki:
+    commands:
+    - mythicmobs mob spawn Bandido 5
+    timer: 3600
+    cancel-timer: true
+  Temporizador:
+    timer: 1200
+  FukimaDocumentos:
+    commands:
+    - Mythicmobs items give <player> QuestFukimaDocumentos
+  BandidosHideo:
+    commands:
+    - mythicmobs mob spawn Bandido 5
+    timer: 3600
+    cancel-timer: true
+  HideoCollar:
+    commands:
+    - Mythicmobs items give <player> QuestHideoCollar
+  AmuletoDaiki:
+    commands:
+    - Mythicmobs items give <player> QuestDaikiAmuleto
+  KakashiLibro:
+    commands:
+    - Mythicmobs items give <player> QuestKakashiLibro
+  JiraiyaFotos:
+    commands:
+    - Mythicmobs items give <player> QuestJiraiyaFotos
+  RiatashiEncargo:
+    commands:
+    - mythicmobs items give <player> QuestRaitashiEncargo
+  OrochimaruInQuestSecundaria:
+    commands:
+    - pex user <player> add enquest.on
+    - pex user add OrochimaruSecundaria
+  katashiAraña:
+    commands:
+    - Mythicmobs Mobs spawn Araña 8
+    timer: 3600
+    cancel-timer: true
+  ShinoLirioPetrificado:
+    commands:
+    - Mythicmobs items give <player> QuestShinoGobalLirioPetrificado 5
+  KimimaroRestosDeKaguya:
+    commands:
+    - Mythicmobs items give <player> QuestKimimaroRestosDeKaguya
+  BrazoKaguyaMensajeOrochimaru:
+    commands:
+    - Mythicmobs items give <player> QuestBrazoKaguyaMensajeOrochimaru
+    timer: 3600
+    cancel-timer: true
+  AtaudDeArenaRolloSellado:
+    commands:
+    - Mythicmobs items give <player> QuestKimimaroRestosDeKaguya
+  ShakuConejoEspecial:
+    commands:
+    - mythicmobs items give <player> QuestShakuSecundariaConejoEspecial 64
+  RickEsencia:
+    commands:
+    - mythicmobs items give <player> QuestRickEssenciaArañaEkectrica 30
+  AnbuBandanaRenegados:
+    commands:
+    - mythicmobs items give <player> QuestAnbuBandanaRenegados 16
+  WorluxDocumentosPersonales:
+    commands:
+    - mythicmobs items give <player> QuestWorluxDocumentosPersonales
+  KudoPergamino:
+    commands:
+    - mythicmobs items give <player> QuestKudoPergamino
+  RestosBandido:
+    commands:
+    - mythicmobs items give <player> RestoDeBandido 64
+  KaisukeGafas:
+    commands:
+    - mythicmobs items give <player> QuestKaisukeGafas
+  KosakuCollarPerlas:
+    commands:
+    - mythicmobs items give <player> QuestKosakuCollarDePerlas
+  CerdosEspeciales:
+    mob-spawns:
+      '0':
+        name: §lCerdos Especiales
+        spawn-location: NuevaKumo 527.0 3.0 822.0
+        mob-type: PIG
+        spawn-amounts: 64
+    cancel-timer: true
+  TakitoCerdoEspecials:
+    commands:
+    - mythicmobs items give <player> QuestTakitoCerdoEspecial 64
+  MikuroMarioneta:
+    commands:
+    - mythicmobs items give <player> QuestMikuroMarioneta
+  HiyoriDocumentos:
+    commands:
+    - mythicmobs items give <player> QuestHiyoriDocumentos
+  Lobos Salvajes: {}
+  Desertores de la roca: {}
+  Herrero bob bandidos: {}
+  Herrero bob Hacha: {}
+  espada del samurai: {}
+  Bandidos samurai: {}
+  Investigando el fondo del mar: {}
+  El paquete de mailo: {}
+  La tunica del feudal: {}
+  Flauta Dama: {}
+  Flauta Entrega: {}
+  Nchacos de tanto: {}
+  Pergamino irumo: {}
+  Cuenco Kyouko: {}
+  La carta de nick: {}
+  secreto de la cascada: {}
+  El pergamino de michel: {}
+  Los bandidos nichirin: {}
+  Invasor de izosuke: {}
+  Zetsus de kagura: {}
+  Serpientes de Hazina: {}
+  Coral uzumaki: {}
+  La flauta de mio uzumaki: {}
+  lobos hazina: {}
+  sapos hazina: {}
+  Serpientes Hazina: {}
+  arañas Hazina: {}
+  Zetsus Hazina: {}
+  RaikagePe:
+    message: Se Raikage pa
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: NETHER_STAR
+      amount: 10
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §f§oCabeza Bandido
+    hunger: 5
+    teleport-location: world3 1066.0 69.0 1196.0
+  Serpientes del desierto PIEL:
+    commands:
+    - mm items give Haxx128 QuestLasSerpientesDelDesiertoPielDeSerpiente 20
+  Katana Feudal del viento:
+    commands:
+    - mi give Katana <player>
+  Serpientes del desierto:
+    commands:
+    - mythicmobs mobs <player> spawn serpientes 20
+  Bandidos Kyouko:
+    commands:
+    - mm mobs spawn Bandido 30
+  El peto del samurai:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_CHESTPLATE
+  Mapa de ryoga:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: MAP
+      damage: 11094
+  El pico del minero:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_PICKAXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §b§lPico Del Minero
+        lore:
+        - §p§i§c§o
+  El pergamino de gin:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §e§lPergamino
+        lore:
+        - §l§i§b§r§o
+  Carta de zenitsu:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: WRITTEN_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: BOOK_SIGNED
+        title: Carta
+        author: Haxx128
+        pages:
+        - |-
+          Zenitsu:§0
+          §0Oh Mi amada Nezuko-Chan cada segundo que estoy lejos de ti me duele como un rayo en el corazon, espero poder verte muy pronto.§0
+          §0
+          §0para:§0
+          §0Mi Amada Nezuko-Chan
+        generation: 0
+  Kunai de kagura:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: FEATHER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §5§lKunai Familiar
+        lore:
+        - §bKunai familiar de Kagura.
+        - §4Item De Mision
+        - §k§u§n§a§i§H§a
+  El pergamino del Cartero:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §5§lCarta de lisa
+        lore:
+        - §4§lItem De Mision
+        - .
+        - §C§a§r§t§a
+  Anillo perdido:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: STONE_BUTTON
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §e§lAnillo De Juliet
+        lore:
+        - §4Item De Mision
+        - §a§n§i§l§l§o§p§e§r§d§i§d§o
+  pala perdida:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SPADE
+  Aceite Temari:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DRAGONS_BREATH
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §0§lAceite De §5§lSauco
+        lore:
+        - §4§lItem De Mision
+        - §A§c§e§i§t§e
+  Escarabajo rinoceronte:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: STONE_BUTTON
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §8§lEscarabajo Rinoceronte
+        lore:
+        - §e§s§c§a§r§a§b§a§j§o
+  BandidosEA:
+    commands:
+    - mm mobs spawn Bandido 20
+  EjemploCima:
+    commands:
+    - mythicmobs items give <player> QuestChoujiPapasEspeciales
+  Collar akio:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: LEASH
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §c§lCollar de Akio
+        lore:
+        - §c§o§l§l§a§r
+  TutorialLocalizacion:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: GLASS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §5§lObjeto Prueba de §4§lQuests
+        lore:
+        - (Quests Item)
+        - §P§r§u§e§b§a
+  Olivos:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: STICK
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §f● §eMadera de Olivo
+        lore:
+        - §7Parece tener una buena dureza
+        - ''
+        - '§6Efecto Especial:'
+        - §6 §6✯ §dObjeto de Mision
+        - ''
+        - §f§l■ ITEM COMUN■
+  CueroOso:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: LEATHER
+      amount: 8
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §f● §dCuero de Oso
+        lore:
+        - §7Cuero fresco arrancado de la carne de un Oso Salvaje
+        - ''
+        - '§6Efecto Especial:'
+        - §6 §6✯ §dObjeto de Mision
+        - §6
+        - §9§l§l■ ITEM RARO■
+  HierroEd:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_INGOT
+      amount: 2
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §f● §7Hierro
+        lore:
+        - §7Hierro de §6Gran Calidad!
+        - ''
+        - '§6Efecto Especial:'
+        - ''
+        - §f§l■ ITEM COMUN■
+        - §f§l■ ITEM COMUN■
+  Jabalis:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: RABBIT_HIDE
+      amount: 3
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §f● §9Cuero de Jabali
+        lore:
+        - §7Cuero fresco de Jabali
+        - ''
+        - '§6Efecto Especial:'
+        - §6 §6✯ §dObjeto de Mision
+        - ''
+        - §f§l■ ITEM COMUN■
+  CarbonEd:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: COAL
+      amount: 3
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §7● §8Carbon
+        lore:
+        - §7Ideal para generar un buen §6calor
+        - ''
+        - '§6Efecto Especial:'
+        - §6 §6✯ §dItem de Mision
+        - ''
+        - §f§l■ ITEM COMUN■
+  PanSimple:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BREAD
+      amount: 16
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §7● §6Pan Simple
+        lore:
+        - §7Un alimento no muy elaborado pero muy §6Rico!
+        - ''
+        - '§6Efecto Especial:'
+        - §d §d☕ §9Alimento
+        - ''
+        - §f§l■ ITEM COMUN■
+  CañaP:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: FISHING_ROD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §7● §fCaña de Pescar
+        lore:
+        - §7Parece vieja pero resistira
+        - ''
+        - '§6Efecto Especial:'
+        - §6 §6✯ §dObjeto de Evento
+        - ''
+        - §f§l■ ITEM COMUN■
+  Barriles:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+      amount: 8
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: §7● §9Barril del Muelle
+        lore:
+        - §7Parece conter provisiones
+        - ''
+        - '§6Efecto Especial:'
+        - §6 §6✯ §dItem de Mision
+        - ''
+        - §f§l■ ITEM COMUN■
+        internal: H4sIAAAAAAAAAE2Py26DMBREbytVoqif0S2SweG16AIVJTGKSfMC7B0PIyAmjRJIIN/VDyzddTlzzixGBVDhbXfspfy6fJe1FAo8kwLe80I3ncy2Nd11S21mGI7m5kaqzZw8E5ldYidDKqjT6CwuXS2ur6B0Yuj6i7iqAPCkwEuUyl7AjxgDxJMKFUkg85FYU97vkFyT5myTUzRmn8Qi7cSXnrUa3X+u2aWxKRkOKn7a9FkboRXeSrHc6nl7uPGWDqzxMN8TTOMDCh9HTBfzY7iXFXvQMfTZSBd/bN6EDa94zDAzps4/DNwnOos3d+rLmjfesI6JSRt2D+vALRP0MT2AX/fqeCccAQAA
+    potion-effect-types:
+    - SLOW
+    potion-effect-durations:
+    - 800
+    potion-effect-amplifiers:
+    - 2
+  PortalM2:
+    commands:
+    - gate open Malory2
+  PortalM2C:
+    commands:
+    - gate close Malory2
+  NejiGlobalPergamino:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO SECRETO
+  NejiPergaminosPuñoSuaveJounin:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO DE INFORMACION
+  HachadelJarl:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: STONE_AXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §9● §6§lHACHA DEL JARL
+        lore:
+        - §7Un hacha de gran calidad pertenece al §6Jarl Marcos
+        - ''
+        - '§6Efecto Especial:'
+        - §6 §6✯ §dItem de Mision
+        - ''
+        - §9§l■ ITEM RARO■
+  DaruiPergamino:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO SECRETO
+  DaruiPergaminoTormenta:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO CONTROL TORMENTA
+  DaruiCristalBolaNegra:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CRISTAL CATALIZADOR
+  DaruiPanteraNegraIPN:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: COLMILLO TRUENO
+  DaruiPanteraNegraIPerla:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERLA NEGRA
+  DaruiPanteraNegraIRV:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: REDUCTOR DE VOLTAJE
+  DaruiPanteraNegraIZarcillo:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 2
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: ZARCILLO DE CONCRETO
+  DaruiDoblePanteraIR:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 30
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: ROCAS
+  DaruiDoblePanteraIRT:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 30
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: ROCAS TRUENO
+  DaruiDoblePanteraTrueno:
+    thunder-world: Final
+    thunder-duration: 180
+    lightning-strikes:
+    - Final -685.0 61.0 -4282.0
+    - Final -676.0 61.0 -4275.0
+  DaruiDobleGarraTorIPlano:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PLANO TOPOGRAFICO
+  DaruiDobleGarraTorIPergaRaro:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINOS RAROS
+  DaruiTormentaNegraIPergaminos:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO SECRETO
+  DaruiTormentaNegraICajetilla:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CAJETILLA DE CIGARROS
+  DaruiFlechaTorIPergasRaros:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 50
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINOS RAROS
+  DeidaraGlobalIArcilla:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: ARCILLA
+  DeidaraGlobalIRefaccionGiro:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: REFACCION GIROSCOPIO
+  DeidaraC2IModeloArcilla:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: MODELOS DE ARCILLA
+  DeidaraVueloc2IPergR:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 40
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINOS RAROS
+  DeidaraVueloc2IPergSec:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO SECRETO
+  DeidaraC3ILente:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: LENTE
+  DeidaraC3IBroche:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: BROCHE PARA CABELLO
+  DeidaraC3IEsmalte:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: ESMALTE MORADO
+  DeidaraC3ICarta:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CARTA
+  DeidaraC3IPergaSec:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO SECRETO
+  DeidaraC4IPergaRa:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 40
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINOS RAROS
+  DarDocumentos:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: DOCUMENTOS IMPORTANTES
+        lore:
+        - Quest Item
+  VasijaSinFarsante:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: VASIJA
+        lore:
+        - Quests Item
+  VasijaConFarsante:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: VASIJA CON FARSANTE
+        lore:
+        - Quests Item
+  Fallar:
+    message: §8§l --- ¡Haz fallado en tu mision! ---
+    fail-quest: true
+  MochilaHakuro:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: MOCHILA HAKURO
+        lore:
+        - Quest Item
+    teleport-location: Final -6939.0 4.0 -2050.0
+  PrioneroRegresar:
+    teleport-location: Final -4415.0 47.0 -2822.0
+  InvestigacionBrazoKaguya:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: INVESTIGACION OROCHIMARU
+        lore:
+        - Quest Item
+  GiveCollar:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: COLLAR GAARA
+        lore:
+        - Quests Item
+  RolloSelladoAtaudDeArena:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: ROLLO SELLADO
+        lore:
+        - Quest Item
+  AbanicoSubidaMultipleDeArena:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: ABANICO
+        lore:
+        - Quest Item
+  ColmilloAtaudDeArena:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: COLMILLO DE SERPIENTE
+        lore:
+        - Quest Item
+  RestosKaguya:
+    message: Haz encontrado los restos antiguos del clan Kaguya
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: RESTOS DE KAGUYA
+        lore:
+        - Quests Item
+  InvestigacionRotacionHuesos:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: INVESTIGACION DE OROCHIMARU
+        lore:
+        - Quest Item
+  PasswordFail:
+    message: '&7&lKimimaro: &f&lNo creo que eso sea correcto, ¿Seguro que recuerdas
+      bien?, intenta de nuevo'
+  InvestigacionKimimaro:
+    commands:
+    - qa give <player> Investigacion Kimimaro
+  DagaAntigua:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: DAGA ANTIGUA
+        lore:
+        - Quest Item
+  PergaminoTsukumo:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO DE RECETAS
+        lore:
+        - Quest Item
+  FloresHinataHyuga1:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: ORQUIRIA MORADA
+        lore:
+        - Quest Item
+  PergaminoHinata:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO HINATA
+        lore:
+        - Quest Item
+  Liriodelaaraña:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: LIRIO DE ARAÑA
+        lore:
+        - Quest Item
+  ManuscritoExtrañoLeones:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: MANUSCRITO EXTRAÑO
+        lore:
+        - Quest Item
+  PergaminosHiashi:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO A
+        lore:
+        - Quest Item
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO B
+        lore:
+        - Quest Item
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO C
+        lore:
+        - Quest Item
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO D
+        lore:
+        - Quest Item
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO E
+        lore:
+        - Quest Item
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO F
+        lore:
+        - Quest Item
+  EntrenamientoHiashi:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: BLANCO DE ENTRENAMIENTO
+        lore:
+        - Quest Item
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: VENDA ESPECIAL
+        lore:
+        - Quest Item
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: SELLO ILUSORIO
+        lore:
+        - Quest Item
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: GAFA OSCURA CON SELLOS
+        lore:
+        - Quest Item
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '10'
+        lore:
+        - Quest Item
+  Barrahiashi:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: BARRA HIASHI
+        lore:
+        - Quest Item
+  EdLibro:
+    message: '&7Vendedor&f: Dicen que el Viejo ese Murio hace mucho tiempo.. Se rumurea
+      que su tumba se encuentra por Konoha'
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §fLibro de Entrenamiento - §6Fortalecimiento
+  EdFallo:
+    fail-quest: true
+  EdMob:
+    commands:
+    - mm m spawn Viejo
+  HiashiHongo:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 10
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: HONGO TAICHI
+        lore:
+        - Quest Item
+  CollarFalsoYamato:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: COLLAR FALSO
+        lore:
+        - Quest Item
+  CelulasYamato:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CELULAS
+        lore:
+        - Quest Item
+  ProtectorYamato:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PROTECTOR DE YAMATO
+        lore:
+        - Quest Item
+  PielSerpiente:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PIEL DE SERPIENTE
+        lore:
+        - Quest Item
+  PatasSapoYamato:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PATAS DE SAPO
+        lore:
+        - Quest Item
+  testActioncomando:
+    commands:
+    - fly cory on
+    - fly cory off
+  RocaDecorativa:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 2
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: ROCA DECORATIVA
+        lore:
+        - Quest Item
+  MercanciaMercader:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: MERCANCIA
+        lore:
+        - Quests Item
+  TintaEspecial:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: TINTA ESPECIAL
+        lore:
+        - Quests Item
+  AguaHerrero:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: AGUA
+        lore:
+        - Quest Item
+  ColmillosDeSerpiente:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 10
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: COLMILLO DE SERPIENTE
+        lore:
+        - Quest Item
+  DaikiAmuleto:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: AMULETO DAIKI
+        lore:
+        - Quest Item
+  GoroComprobante:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: COMPROBANTE GORO
+        lore:
+        - Quest Item
+  GoroCartas:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 4
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CARTA DE GORO
+        lore:
+        - Quest Item
+  GivearItem:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: COOKED_BEEF
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CARNE ESPECIAL
+        lore:
+        - Quest Item
+  PergaminoTsunamiDeArena:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO SELLADO
+        lore:
+        - Quest Item
+  GivePergamino:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO GAARA
+        lore:
+        - Quest Item
+  GiveCalabaza:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CALABAZA
+        lore:
+        - Quest Item
+  PergaminoShirogane:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGGAMINO CONTROL DE IMAN
+        lore:
+        - Quest Item
+  PergaminosRaros:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 15
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO RARO
+        lore:
+        - Quest Item
+  PergaminoYamato:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO YAMATO
+        lore:
+        - Quest Item
+  PergaminosAcademia:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO
+  IwaD1LibroSeth:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: LAS HISTORIAS DE SETH
+  IwaD2Ramen:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: RAMEN
+  IwaD5Carta:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CARTA DE PEDIDO
+  IwaD5Documento:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: DOCUMENTO DE PESCA
+  SunaD1Escritos:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: ESCRITOS DEL KAZEKAGE
+  KonohaD1Gato:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: GATO
+  KonohaD2Bandido:
+    commands:
+    - mm m spawn Bandido 1 world3,1115,71,-551
+    timer: 180
+    cancel-timer: true
+  KonohaD2JutsusProhibidos:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: JUTSUS PROHIBIDOS
+  TiburonesEtapa1:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: COLMILLO DE TIBURON
+  KonohaD4Dango:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: DANGO
+  KonohaD5PergaminoAntiguo:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO ANTIGUO
+  KonohaD6Suministros:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: SUMINISTROS
+  KonohaD2Bandidos:
+    commands:
+    - mm m spawn Bandido 1 world3,1016,71,-458
+  KumoD1Documento:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: DOCUMENTOS
+  KumoD4Carta:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CARTA
+  PergaminoChoujuro: {}
+  PergaminoChoujuro1:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO
+  LluviaSicario2:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 10
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO DE LA NIEBLA SANGRIENTA
+  PergaminoImportateMisionEquipoN°3:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO IMPORTANTE
+  MaderaKoji:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 10
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: MADERA KOJI
+        lore:
+        - .
+  Materiales de Koji:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 10
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: MADERA KOJI
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 20
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CONCRETO KOJI
+  TpEscolataKumo:
+    message: '&4&o Si Daimyo muere Fallan la misión recuerdenlo.'
+    teleport-location: world3 1218.0 66.0 1157.0
+  Dar pergamino uzu:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO SECRETO
+        lore:
+        - PERGAMINO DEL UZUKAGE
+  Dar Ramen:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: RAMEN ICHIRAKU
+  PergaminoParaChojuroE2:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO DE CHOJURO
+  Dar sello uzu:
+    commands:
+    - mi give UzumakiSelloChakra <player>
+    - cast teach <player> uzumakisellochakra
+  Resistencia Al Fuego:
+    potion-effect-types:
+    - FIRE_RESISTANCE
+    potion-effect-durations:
+    - 1200
+    potion-effect-amplifiers:
+    - 1
+  MisionesD2E6Informacion:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO INFORMACION DE ARMAS
+  Kushina Pergamino:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO ADAMANTITA
+  EscoltaCaminaKumo6:
+    commands:
+    - escoltacamina 47726 1098 64 999 0.4
+  Pergaminos raros:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 50
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO RARO
+  DesapareceEscoltaKumo1:
+    commands:
+    - npc despawn 47742
+  Kushina Adamantina:
+    commands:
+    - mi give adamantina <player>
+    - cast teach <player> CadenasAdamantina
+  EscoltaTpKumo:
+    commands:
+    - npc spawn 47717
+    teleport-location: world3 1216.0 66.0 1152.0
+  EscoltaKumoDesaparece:
+    commands:
+    - npc despawn 47726
+    - npc spawn 47742
+  Escoltakumopuentedesaparece:
+    commands:
+    - npc despawn 47717
+    - npc spawn 47726
+    - npc sel 47726
+    - npc skin kudzoi
+  MisionesD5Bandido:
+    commands:
+    - mm m spawn BandidoZabusa1 1 world,719,72,-142
+  MisionesD6Informacion:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 4
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO INFORMACION DE ENEMIGOS
+  armaduralava:
+    commands:
+    - mi give ArmaduraLava <player>
+    - cast teach <player> lavadymmy
+    - cast teach <player> lavita
+    - cast teach <player> dlava1
+    - cast teach <player> dlava2
+    - cast teach <player> dlava3
+    - cast teach <player> dlava4
+  Zabuza Polvos Prismaticos:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 3
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: POLVOS PRISMATICOS
+  Caparazon:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CAPARAZON
+  Ojo de agua:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: OJO DE AGUA
+  Roca Pulida:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: ROCA PULIDA
+    timer: 600
+  Zabuza Neblina2:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CADENAS
+  Zabuza Cuchillo:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: DAGA KAMITSU
+  Zabuza caña:
+    message: Caña Zabuza
+    commands:
+    - mi give ZabuzaCaña <player>
+  TpMisionEquipoN°2:
+    teleport-location: kamuidefi 1194.0 4.0 405.0
+  1TpMisionEquipoN°2:
+    teleport-location: kamuidefi 1245.0 29.0 404.0
+  Avis1:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 4
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PLANTA AVIS
+  TP final Mision N°3:
+    teleport-location: kamuidefi 1340.0 4.0 437.0
+  Kankuro Informe 1:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: INFORMACION GENERAL
+  Kankuro informe 2:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: INFORMACION SOBRE PUENTES.
+  Kankuro informe 3:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: INFORMACION DE CASAS
+  Kankuro informe 4:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: INFORMACION FINAL
+  Kankuro Anillos:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 10
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: ANILLOS
+  Kankuro Polvora:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 20
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: POLVORA REFINADA
+  Kankuro Marnionetav2:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 6
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: TROZO DE TELA REFORZADA
+  Kankuro MarionetaV2:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 6
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: TROZO DE TELA REFORZADA
+  Kimimaro Extension de Hueso:
+    commands:
+    - mi give Hueso2 <player>
+  Kankuro Escolta:
+    commands:
+    - escoltaquest 48197 Kankuro_Mision_Especial <player>
+  Kankuro Tiempo:
+    message: Tienes 8 minutos para salvar a Kankuro. Tu puedes
+    timer: 480
+  Kankuro Antidoto:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: ANTIDOTO
+  JarrònParaChojuroE3:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: JARRON
+  ChojuroPendientesE3:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PENDIENTES
+  Vendedor Seika Takigakure:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINOS
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: ESCAMAS DE TIBURON
+  Wang dangos:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 3
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: DANGOS
+  Aceites:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CARTA
+  Refacciones Leñador:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 6
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PIEZAS DE MADERA
+  Kankuro Frascos:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 3
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: FRASCOS DE TOXINAS
+  AparecerEscolta2-Desaparece1:
+    commands:
+    - npc despawn 48181
+    - npc spawn 48183
+  AparecerEscolta3-Desaparece2:
+    commands:
+    - npc despawn 48183
+    - npc spawn 48184
+  Globo:
+    commands:
+    - mi give globo <player>
+  IchaIcha:
+    commands:
+    - mi give ichaicha <player>
+  ListaKakashi:
+    commands:
+    - mi give listakakashi <player>
+  Hueso Doble Filo:
+    commands:
+    - mi give hueso3 <player>
+  Kushina Pergamios:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO UZUMAKI
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 2
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINOS DE SELLADO UZUMAKI
+  Kushina Sicarios:
+    commands:
+    - mm m spawn Sicario 5 world3,1615,84,-254
+  Kushina Espadachin:
+    commands:
+    - mm m spawn Sicario 5 world3,1560,64,-982
+  Hinata Carta:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO CARTA
+  Hinata Jounin:
+    commands:
+    - mm m spawn Jounin 5 world3,1004,73,-569
+  ingredientea:
+    commands:
+    - mi give ingredientea <player>
+  ingredientec:
+    commands:
+    - mi give ingredientec <player>
+  ingrediented:
+    commands:
+    - mi give ingrediented <player>
+  Maderaagatsumo:
+    commands:
+    - mi give maderaagatsumo <player>
+  Pergamino Sennin:
+    commands:
+    - mi give pergaminosennin <player>
+  Sapos enemigos:
+    commands:
+    - mm m spawn sapo
+  Frasco:
+    commands:
+    - mi give frasco <player>
+  Frasco2:
+    commands:
+    - mi give frasco2 <player>
+  frasco3:
+    commands:
+    - mi give frasco3 <player>
+  frasco4:
+    commands:
+    - mi give frasco4 <player>
+  frasco5:
+    commands:
+    - mi give frasco5 <player>
+  Frasco6:
+    commands:
+    - mi give frasco6 <player>
+  Suministros sabio:
+    commands:
+    - mi give probiciones <player>
+  Ryuta Chunins:
+    commands:
+    - mm m spawn ChuninAcid 5 world3,1411,72,-10
+  Ryuta Carta:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CARTA
+    timer: 240
+  Ryuta Jounins:
+    commands:
+    - mm m spawn Jounin 3 world3,1702,64,-418
+  Juugo25 transformados:
+    commands:
+    - mm m spawn Transformado 20 96 75 966
+  ingredienteb:
+    commands:
+    - mi give ingredienteb <player>
+  Probiciones sabio:
+    commands:
+    - mi give probiciones <player>
+  Jeringa Kabuto:
+    commands:
+    - mi give jeringa <player>
+  Gamakichi 50:
+    commands:
+    - mm m spawn SapoGigante 1 world,5881,33,685
+  Transformados Juugo25:
+    commands:
+    - mm m spawn Transformado 20 world,95,74,970
+  Kushina Desertores:
+    commands:
+    - mm m spawn Desertor 5 world3,1522,58,-646
+  Serpientes J50:
+    commands:
+    - mm m spawn Serpiente 60 world3,1360,22,-110
+  Juugo50:
+    commands:
+    - mm m spawn Juugo world,66,75,966
+  Veneno Serpiente:
+    commands:
+    - mi give venenoserpiente <player>
+  muerte juugo:
+    commands:
+    - cast sellocuatrosimbolos
+    - cast nagashi
+  BandidosEscoltaKUMO:
+    message: §6* Aparecen 3 Bandidos§f, Proteje a Daimyo§f, si en 2 min no los derrotas
+      mataran a Daimyo
+    commands:
+    - mm m spawn Bandido 3 World3,1104,65,1030
+  IrConsejoKumo:
+    teleport-location: kamuidefi 1026.0 3.0 570.0
+  AparecerEscolta-Desaparece3:
+    commands:
+    - npc despawn 48184
+    teleport-location: kamuidefi 1026.0 3.0 570.0
+  Defensa Kaguya:
+    commands:
+    - mi give botaskaguyav2 <player>
+  Renzu Pergamino:
+    commands:
+    - mi give orquideamorada <player>
+  AparecerEscolta1SUNA:
+    commands:
+    - npc spawn 49021
+    teleport-location: world3 -558.0 63.0 933.0
+  AparecerEscolta2SUNA:
+    commands:
+    - npc despawn 49021
+    - npc spawn 49022
+  AparecerEscolta3SUNA:
+    commands:
+    - npc despawn 49022
+    - npc spawn 49123
+  Rotacion de Huesos:
+    commands:
+    - mi give RotacionHueso <player>
+    - cast teach <player> Kaguya
+  AparecerEscolta4SUNA:
+    commands:
+    - npc despawn 49123
+    - npc spawn 49134
+  AparecerEscolta5SUNA:
+    commands:
+    - npc despawn 49134
+    - npc spawn 49135
+  BandidosEscoltaSUNA:
+    commands:
+    - mm m spawn Bandido 3 World3,-343,73,940
+  EscoltaFallarSUNA:
+    commands:
+    - npc despawn 49022
+  AparecerEscolta6SUNA:
+    commands:
+    - npc despawn 49135
+    teleport-location: kamuidefi 1027.0 3.0 534.0
+  Kusa jack:
+    commands:
+    - mi give kusarigama <player>
+  EscarabajoSHino:
+    commands:
+    - mi give Escarabajo <player>
+  FrascosVeneno:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 3
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: FRASCOS PARA VENENO
+  ramen:
+    commands:
+    - mi give ramen <player>
+  Informe Secreto:
+    commands:
+    - mi give informesecreto <player>
+  Pergamino Rotacion:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: Pergamino Estudio
+  Rayos VS:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PIEDRA RELAMPAGO
+  Rayos dominados VS:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: RAYO DOMINADO
+    lightning-strikes:
+    - world3 1276.0 137.0 511.0
+    - world3 1276.0 137.0 511.0
+    - world3 1276.0 137.0 511.0
+    - world3 1276.0 137.0 511.0
+    - world3 1276.0 137.0 511.0
+  Carta Khael:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: Carta
+  Hinata Recursos VS:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PRENDAS BOLSA DE DORMIR
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PROVISIONES BOLSA DE COMIDA NUTRITIVA
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 3
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PRENDAS ROPA NUEVA DE ENTRENAMIENTO
+  Hinata Chunins vs:
+    commands:
+    - mm m spawn ChuninAcid3 8 world3,697,87,-327
+  Khael Kaguya:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: Pergamino
+  Tiempo Pantera Negra:
+    timer: 5
+  Pantera Negra 30%:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: GEMA 30% RAYO NEGRO DOMINADO
+    lightning-strikes:
+    - world3 1450.0 74.0 688.0
+    - world3 1450.0 74.0 688.0
+    timer: 40
+  Pantera Negra 60%:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: GEMA 60% RAYO NEGRO DOMINADO
+    lightning-strikes:
+    - world3 1450.0 74.0 688.0
+    - world3 1450.0 74.0 689.0
+    - world3 1452.0 74.0 689.0
+    - world3 1452.0 74.0 688.0
+    - world3 1451.0 74.0 687.0
+    - world3 1449.0 73.0 687.0
+    - world3 1449.0 73.0 699.0
+    - world3 1439.0 73.0 689.0
+    - world3 1462.0 82.0 694.0
+    timer: 40
+  Carta Renzu:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: Carta
+        lore:
+        - Para Renzu
+  Bola Negra R2:
+    commands:
+    - mm m spawn Bandido 10 world3,1080,64,586
+  Bola negra R:
+    commands:
+    - mm m spawn Bandido 10 world3,1074,64,658
+  Sharingan 1vs:
+    commands:
+    - mm m spawn Bandido 12 world3,1147,100,-177
+  Manzanas Sharingan:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 4
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PROVISIONES MANZANA
+  Sicarios Sharingan:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 4
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: MANZANA
+    commands:
+    - mm m spawn SicarioZabusa4 5 world3,1597,64,-355
+  Sharingan 31 VS:
+    timer: 180
+  Sharingan 3 VS:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO PROHIBIDO
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: Escorpion Verde - Zhong
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: Escorpion Azul - Isaac
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO PROHIBIDO
+    timer: 240
+  Sharingan 3 aspas vs:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 2
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO PROHIBIDO
+  Metal Nichirin:
+    commands:
+    - mi give nichirin <player>
+  Reliquia kyo:
+    commands:
+    - mi give reliquiakyo <player>
+  Pantera Negra 100%:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: GEMA 100% RAYO NEGRO DOMINADO
+    lightning-strikes:
+    - world3 1451.0 74.0 688.0
+    - world3 1450.0 73.0 685.0
+    - world3 1449.0 74.0 688.0
+    - world3 1451.0 73.0 691.0
+    - world3 1453.0 73.0 688.0
+    - world3 1452.0 73.0 685.0
+    - world3 1448.0 73.0 688.0
+    - world3 1449.0 73.0 691.0
+    - world3 1453.0 73.0 690.0
+    - world3 1453.0 73.0 686.0
+    - world3 1448.0 73.0 686.0
+    - world3 1439.0 73.0 687.0
+    - world3 1438.0 73.0 690.0
+    - world3 1438.0 73.0 694.0
+    - world3 1442.0 73.0 700.0
+    - world3 1448.0 73.0 700.0
+    - world3 1461.0 82.0 694.0
+    - world3 1458.0 82.0 682.0
+    - world3 1450.0 73.0 706.0
+    - world3 1444.0 73.0 703.0
+    timer: 720
+  CañaCH:
+    commands:
+    - mi give cañach <player>
+  Pico cueva:
+    commands:
+    - mi give picoa <player>
+  AsesinoC:
+    commands:
+    - mm m spawn Asesino 1 world,119,36,-788
+  Vendas Parpa:
+    commands:
+    - mi give vendasparpa <player>
+  algateito:
+    commands:
+    - mi give algateito <player>
+  Desertores parpa:
+    commands:
+    - mm m spawn Desertor 15
+  Pergamino tierra:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO DE TIERRA
+  Pieles de serpiente kuro:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 10
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PIELES DE SERPIENTE
+  Kurotsuchi Incienso:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 4
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: INCIENSO
+  Kurotsuchi Pedernal:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 4
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PEDERNAL
+  Joya eterna Kurotsuchi:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: JOYA ETERNA
+  Piedras Kurotsuchi:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 15
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: FRAGMENTO DE PETRICITA
+  Hongos de Pedernal Kurotsuchi:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 8
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: HONGOS DE PEDERNAL
+  Pergamino Prohibido Kurotsuchi:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO PROHIBIDO
+  Cabeza de araña kurotsuchi:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CABEZA DE ARAÑA REINA
+  Sello de serpiente kurotsuchi:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: SELLO DE SERPIENTE
+  Piedras de magma kurotsuchi:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 3
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PIEDRA DE MAGMA
+  Pildoras extrañas kurotsuchi:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 7
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PILDORA EXTRAÑA
+  TepeN°5equipo:
+    teleport-location: world3 503.0 69.0 205.0
+  Carta Shino:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CARTA SHINO
+  Frasco Shino:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: FRASCO VACIO
+  AparecerEscolta1:
+    commands:
+    - npc spawn 48181
+  Katanas Dobles:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: KATANAS DOBLES
+  Pergamino A:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO YOTSUKI
+  PergaminoBola:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO YOTSUKI
+  PergaminoRaiton:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: ELEMENTO RAITON Y SU USO
+  KatanaBee:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: KATANA RAIJIN
+  Nashirin20:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 20
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: METAL NASHIRIN
+  Nashirin10:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 10
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: METAL NASHIRIN
+  YotsukiAVeloRE5MetalNashirin:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 10
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: METAL NASHIRIN
+  YotsukiADefRE5MetalNashirin:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 20
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: METAL NASHIRIN
+  YotsukiALariatE5PergaminoRaro:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 40
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO RARO
+  YotsukiAVelocidadRE4MetalNashirin:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 10
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: METAL NASHIRIN
+  VelocidadRayoE4Metal:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 10
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: METAL NASHIRIN
+  DefensaRE5Metal20:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 20
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: METAL NASHIRIN
+  DINERO KANKURO:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: DINERO
+  BolaElectricaE4PergaminoRaro:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO RARO
+  Pergamino Yotsuki:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO YOTSUKI
+  Zara 2:
+    commands:
+    - mm m spawn ChuninAcid3 5 world3,700,86,-327
+  Kushina Sicarios2:
+    commands:
+    - mm m spawn SicarioZabusa4 5 world3,1616,84,-254
+  Kushina Desertores2:
+    commands:
+    - mm m spawn DesertorA 5 world3,1522,58,-645
+  Kushina Sicarios3:
+    commands:
+    - mm m spawn SicarioZabusa4 8 world3,1560,65,-982
+  Rayo transmision RAYOS:
+    timer: 7
+    cancel-timer: true
+  Rayo 21:
+    timer: 8
+  Bola negra vs1:
+    commands:
+    - mm m spawn Bandido 12 world3,1072,64,652
+  Bola negra vs2:
+    commands:
+    - mm m spawn Bandido 12 world3,1082,63,590
+  Tontos1:
+    commands:
+    - mm m spawn Tonto 12 world3,1887,69,26
+  Tontos 2:
+    commands:
+    - mm m spawn Tonto 12 world3,1864,71,-17
+  Tontos3:
+    commands:
+    - mm m spawn Tonto 12 world3,1779,69,-26
+  Panal1:
+    commands:
+    - mm m spawn ChuninAcid3 7 world3,1416,71,-55
+  Panal 2:
+    commands:
+    - mm m spawn JouninZabusa5 5 world3,1725,65,-446
+  Armadura1:
+    commands:
+    - mm m spawn Marionetas 12 world3,-443,63,1046
+  Armadura2:
+    commands:
+    - mm m spawn Marionetas 12 world3,-419,50,1045
+  Hilos1:
+    commands:
+    - mm m spawn Marionetas1 12 world3,-443,63,1046
+  Hilos2:
+    commands:
+    - mm m spawn Marionetas1 12 world3,-419,50,1045
+  Carcel1:
+    commands:
+    - mm m spawn Marionetas2 12 world3,-443,63,1046
+  Carcel 2:
+    commands:
+    - mm m spawn Marionetas3 12 world3,-419,50,1045
+  Kurotsuchi Sastre:
+    timer: 1200
+  Kurotsuchi Capital:
+    timer: 900
+  Kurotsuchi Paquete:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PAQUETE
+  Kurotsuchi Dinero:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: DINERO
+  Kurotsuchi Pildoras:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 30
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PILDORA EXTRAÑA
+  Kurotsuchi hilo:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: HILO DE COSER
+  Kurotsuchi TIMING:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: HILO DE COSER
+    timer: 900
+  KUROTSUCHI CARTA:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CARTA
+    timer: 1200
+  Kurotsuchi PaqueteZ:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PAQUETE
+    timer: 900
+  Mangos Wang:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: MANGO
+  Wang MANGOSZ:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 3
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: MANGOS
+  HakuA:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 3
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: ALOE VERA
+  Haku SR:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: SABIA DE SAUCE
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: RAIZ DE CRUMIO
+  HakuH:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: HELECHO GENESIS
+  HakuC:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: HOJA DE CRUNO
+  HakuP:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO MEDICO
+  HakuR:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: ROCA GELIDA
+  HakuCR:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CERTIFICADO
+  Haku D:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: DINERO
+  Haku S:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: SELLO HIE
+  Haku Cubeta:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CUBETA
+  HakuB:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: BOTIN
+  Haku Hielo:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 7
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO DE HIELO
+  Haku Abanico:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: ABANICO DE METAL
+  AsumaP:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO
+    timer: 600
+  Asumaen:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: ENCENDEDOR
+  Asuma Boxiodo:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 2
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: BOXIODO CON LAVA
+  Asuma BoxiodoZ:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 2
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: BOXIODO EN LAVA
+    timer: 60
+  Asuma BoxiodoZZ:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 2
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: BOXIODO PERFECTO
+  AsumaK:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: METAL NISHIRIM
+  Asuma Cuchillas:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CUCHILLAS
+  Asuma Cigarros:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CIGARROS
+  AsumaT:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: TABLERO DE SHOGI
+  Asuma Pergaminosp:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINOS PRECIADOS
+  Asuma Pergaminos:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 25
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO RARO
+  MeiE3Metal:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 4
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: Esferas de metal tagamane
+  TobiramaA:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: ARMADURA TOBIRAMA
+  TobiramaP:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO DE SELLADO
+  TobiramaK:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 30
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: KUNAI
+  TobiramaPZ:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 15
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINOS
+  Tobirama KZ:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 30
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: KUNAI
+  TobiramaAB:
+    timer: 600
+  SarutobiM:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: MERCANCIA
+  SarutobiC:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CURCUMA
+  SarutobiCZ:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CAÑA
+  SarutobiP:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO
+  SarutobiK:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: KUNAI
+  SarutobiPZ:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: JOYAS PRECIADAS
+  SarutobiPZ2:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO
+  SarutobiN:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: METAL NISHIRIM
+  SarutobiT2:
+    timer: 600
+  SarutobiL:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: LISTA
+  SarutobiMZ:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: MATERIALES
+  SarutobiPZZ:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 18
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO
+  Sarutobi Hacha:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: HACHA DE BOB
+  TENSEIGANP:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO OTSUSUKI
+  TENSEIGANPZ:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 10
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PIEL DE LOBO
+  ToneriMetales:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 10
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: METAL NISHIRIM
+  ToneriPZ:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO
+    timer: 300
+  MeiE2Colgante:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: Colgante de obsidia
+  MeiE3Protector:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: Traje protector
+  MeiE2PergaminoYotonMeiE2PergaminoYoton:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: Pergamino Yoton
+  MeiE2PiedraVolcanica:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PIEDRAS VOLCANICAS
+  Mei2E4Piedras:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PIEDRAS VOLCANICAS
+  ToneriMG:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: METAL NISHIRIN
+  ToneriEP:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 3
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO
+  ToneriEI:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: INVESTIGACION
+  ToneriSP:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO
+    timer: 600
+  ToneriCC:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 15
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CUERO DE PERRO NINJA
+  Tonerigm:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: METAL NISHIRIN
+  ToneriTP:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 10
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: CUERO DE PERRO NINJA
+  ToneriTpergamino:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO
+  ToneriGG:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 8
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: GEMA OTSUSUKI
+  AsumaCB:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 2
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: BOXIODO
+    timer: 120
+  MeiE3EscupitajoTiempo:
+    timer: 60
+  Pain P1:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO DE GUERRA
+    timer: 12
+  PainP2:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO DE GUERRA
+    timer: 7
+  PainP3:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO DE GUERRA
+    timer: 900
+  PainT:
+    timer: 12
+  Paintz:
+    timer: 20
+  YotsukiAE2RayoTrans:
+    timer: 300
+  PainTime:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO DE GUERRA
+    timer: 15
+  PainEX:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO DE GUERRA
+  Informesuna:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §a§lInforme
+        lore:
+        - §5Información para Sunagakure
+  KushinaS:
+    message: ¿Qué demonios hace un mocoso en este lugar?, será mejor que te largues
+      de aquí si no quieres terminar hecho pedazos, ¿oh? Así que vienes a rescatar
+      a la mocosa, jajajajaja no podrás llevártela y por molestarme serás asesinado,
+      MUEREEEEE.
+  RoshiGlobalE4Katana:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: KATANA DE ROSHI
+  Pergamino ALcaide:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: Indicaciones De Guardia
+        lore:
+        - Instrucciones para guardia fronterisa
+  Renegados Medico:
+    commands:
+    - mm mobs spawn Desertor 2 world3,253,72,1068
+  Informe informante:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §a§lInforme
+        lore:
+        - Informe sobre aldeas enemigas de Sunagakure
+  Renegado templo:
+    commands:
+    - mm mobs spawn Renegado world3,148,72,1069
+  Transformados Anomalia:
+    commands:
+    - mm mobs spawn Transformado 7 world3,109,71,506
+  Serpientes shiro:
+    commands:
+    - mm mobs spawn Serpiente 20 world3,-839,62,860
+  Instrucciones guardia:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §eIndicaciones De Guardia
+        lore:
+        - Instrucciones para le fuerte Norte
+  plaga araña:
+    commands:
+    - mm mobs spawn Arana 15 world3,-720,69,676
+  Plaga serpiente:
+    commands:
+    - mm mobs spawn Serpiente 15 world3,-720,69,676
+  Zabusa 4:
+    teleport-location: world 712.0 73.0 -59.0
+  Zabuza final:
+    clear-inventory: true
+    teleport-location: world 701.0 73.0 -48.0
+  Zabusa final:
+    teleport-location: world 700.0 73.0 -48.0
+  desertor medico:
+    commands:
+    - mm m spawn Desertor 2 world3,252,72,1068
+  informe suna:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §a§linforme
+        lore:
+        - informe secreto para sunagakure
+  renegadotemplo:
+    commands:
+    - mm m spawn Renegado world3,134,72,1069
+  transformadosanomalia:
+    commands:
+    - mm m spawn Transformado 7 world3,109,71,506
+  serpienteshiro:
+    commands:
+    - mm m spawn Serpiente 20 world3,-836,62,860
+  plagaaraña:
+    commands:
+    - mm m spawn Arana 15 world3,-720,69,676
+  plagaserpiente:
+    commands:
+    - mm m spawn Serpiente 15 world3,-720,69,676
+  reymono:
+    teleport-location: world -2216.0 63.0 -92.0
+  examenchuninhaxx:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: WRITTEN_BOOK
+      amount: 30
+      meta:
+        ==: ItemMeta
+        meta-type: BOOK_SIGNED
+        title: Examen chunin
+        author: karma4924
+        pages:
+        - |-
+          Examen Chunin§0
+          §0--------------------------------------Reglas:§0
+          §0
+          §0-No hablar§0
+          §0-No copiarse§0
+          §0-Tener buena ortografia§0
+          §0-Esperar callados una vez acabes el examen firmalo y dejalo en el cofre
+        - |-
+          1. ¿Que es un Kekkei Genkai? Nombrar todos los que existen y nombrar alguno de sus jutsus§0
+          §0
+          §02. Nombrar los kages actuales con sus respectivos nombres originales§0
+          §0
+          §03. Nombrar los nombres de las aldeas y elementos
+        - |-
+          predominantes§0
+          §0
+          §04. ¿Cual de estos fue el segundo kazekage?§0
+          §0
+          §0A_ Juandi§0
+          §0
+          §0B_ NickMaster§0
+          §0
+          §0C_ NeonEnderman§0
+          §0
+          §05. Nombrar todos los jefes de los clanes de las aldeas
+        - |-
+          6. ¿Que arma estuvo en sunagakure?§0
+          §0
+          §0A_ Kiba§0
+          §0
+          §0B_ Hiramekarei§0
+          §0
+          §0C_ Kuzarigama§0
+          §0
+          §07. ¿Que bijuu posee el jinchuriki Kateshikikato?
+        - |-
+          A_ Isobu§0
+          §0
+          §0B_ Chomei§0
+          §0
+          §0C_ Kokuo§0
+          §0
+          §08. ¿Que harias si en tu aldea la comienzan a atacar y te rodean junto a tus gennin shinobis de rango anbu elite?
+        - |-
+          A_ Huir §0
+          §0
+          §0B_ Pelear §0
+          §0
+          §0C_ Crear una distraccion e intentar huir§0
+          §0
+          §0D_ Ninguna de las anteriores§0
+          §0
+          §09_ ¿Cual de estos shinobis poseen la arena de oro?
+        - |-
+          A_ Raknarok§0
+          §0
+          §0B_ Doragon§0
+          §0
+          §0C_ Chrome§0
+          §0
+          §010. ¿Porque quieres ser Chunin?
+        generation: 0
+  montesapo:
+    teleport-location: world 5934.0 71.0 611.0
+  zab1:
+    teleport-location: world 709.0 72.0 -143.0
+  orochitp:
+    teleport-location: world 243.0 65.0 -667.0
+  orochitp1:
+    teleport-location: world 243.0 66.0 -667.0
+  orochi1k:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: TRIPWIRE_HOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: Key Orochimaru 1 y 2
+        lore:
+        - §o§r§o§c§h§i§k
+  orochi3k:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: LEVER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: Key Orochimaru 1 y 2
+  SenseiIwa:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: STONE
+      damage: 5
+      amount: 45
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §e§lRyo
+  SenseiIwa2:
+    commands:
+    - give <player> 1:5 45 Name:&e&lRyo
+  Parpadeanterpg:
+    message: '&6&o* Aparecen 10 Desertores.'
+    fail-quest: true
+    commands:
+    - spawnmob Desertor 386,68,648,world3 10
+  PanalVsChunin2:
+    commands:
+    - mm mobs spawn Chunin 3 world3,1415,71,-57
+  PanalVsJounin2:
+    commands:
+    - mm mobs spawn Chunin 3 world3,1415,71,-57
+  PanalVsJounin1:
+    commands:
+    - mm mobs spawn Jounin 1 world3,1700,65,-417
+  PanalVsJounin:
+    commands:
+    - mm m spawn Jounin 1 world3,1700,65,-417
+  PanalVsChunin:
+    commands:
+    - mm m spawn Chunin 3 world3,1415,71,-57
+  PanteraNegraTimer:
+    timer: 30
+  sellouzuVSPerro1:
+    commands:
+    - mm m spawn LoboPequeno 1 world3,1487,128,-142
+  BandidosPanteraNegra:
+    commands:
+    - mm m spawn Bandido 4 World3,807,63,1061
+    timer: 300
+  sellouzuVSPerro2:
+    commands:
+    - mm m spawn LoboPequeno 1 world3,1477,105,-143
+  sellouzuVSPerro3:
+    commands:
+    - mm m spawn LoboPequeno 1 world3,1448,176,-115
+  sellouzuVSPerro4:
+    commands:
+    - mm m spawn LoboPequeno 1 world3,1468,196,-130
+  Historia1t:
+    commands:
+    - warp Historia1 <player>
+  MercanciaBolaNegra:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: MERCANCIA ROBADA
+  BandidosBolaNegra:
+    commands:
+    - mm m spawn Bandido 5 world3,1184,51,576
+    timer: 300
+  ProvisionesBolaNegra:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PROVISIONES
+  Historia2t:
+    commands:
+    - warp capitulo2 <Player>
+  Historia3t:
+    commands:
+    - warp capitulo3 <player>
+  BandidosBolaElectrica:
+    commands:
+    - mm m spawn Bandido 5 world3,1330,63,545
+    timer: 300
+  BolaElectricaRayo:
+    commands:
+    - smite <player>
+    timer: 150
+  BolaElectricaR:
+    lightning-strikes:
+    - world3 901.0 128.0 1087.0
+    timer: 210
+  RBolaElectrica:
+    lightning-strikes:
+    - world3 902.0 128.0 1087.0
+  KushinaCuracionUzuVSJefe:
+    commands:
+    - mm m spawn JefePandilla 1 world3,1615,70,-253
+  historia4t:
+    commands:
+    - warp capitulo4 <player>
+  Historia5t:
+    commands:
+    - warp capitulo5 <player>
+  historia6t:
+    commands:
+    - warp capitulo6 <player>
+  Historia7:
+    commands:
+    - warp capitulo7 <player>
+  YotsukiGennin1:
+    commands:
+    - mm m spawn YotsukiGennin 1 World3,876,73,875
+    timer: 120
+  YotsukiGennin2:
+    commands:
+    - mm m spawn YotsukiGennin 2 World3,876,73,875
+    timer: 120
+  ChuninRayoTransmision:
+    commands:
+    - mm m spawn Chunin 1 World3,876,73,875
+    timer: 120
+  Historia8t:
+    commands:
+    - warp capitulo8 <player>
+  8Trigramas8PalmasVSBandidos:
+    commands:
+    - mm m spawn Bandido 3 world3,1003,72,-566
+  8Trigramas8PalmasVSOsosPolares:
+    commands:
+    - mm m spawn OsoPolar 4 world3,784,48,-1271
+  8Trigramas8PalmasVSOsos:
+    commands:
+    - mm m spawn Oso 4 world3,784,48,-1271
+  Historia9t:
+    commands:
+    - warp capitulo9 <player>
+  Historia10t:
+    commands:
+    - warp capitulo10 <player>
+  Historia11t:
+    commands:
+    - warp capitulo11 <player>
+  AranaSharingan1:
+    commands:
+    - mm m spawn Arana 1 world3,790,80,-350
+    timer: 120
+  OsoSharingan1:
+    commands:
+    - mm m spawn Oso World3,935,59,-695
+    timer: 120
+  OsoSharingan:
+    commands:
+    - mm m spawn Oso 1 world3,935,59,-695
+    timer: 120
+  Capitulo 12:
+    commands:
+    - warp capitulo12 <player>
+  Historia12t:
+    commands:
+    - warp capitulo12 <player>
+  YukiSeguir:
+    commands:
+    - npc follow
+  HIstoria9tp:
+    commands:
+    - warp capitulo9 <player>
+  YukiCaminar:
+    commands:
+    - npc sel
+    - npc follow
+  Yuki_Seguir:
+    commands:
+    - npc sel 81466
+    - npc follow <player>
+  AbejorrosVSPlantaEspecial:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PLANTA ESPECIAL
+  AbejorrosVSPlantaEspecialAbejorros:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: INSECTO ABEJORROS
+  SicariosSharingan2:
+    commands:
+    - mm m spawn Sicario 5 world3,852,72,-472
+    timer: 120
+  Sicarios1Sharingan2:
+    commands:
+    - mm m spawn Sicario 5 world3,1599,64,-353
+    timer: 120
+  historia13t:
+    commands:
+    - warp capitulo13 <player>
+  Historia14t:
+    commands:
+    - warp capitulo14 <player>
+  historia15t:
+    commands:
+    - warp capitulo15 <player>
+  historia16t:
+    commands:
+    - warp capitulo16 <player>
+  ChuninPuñoSuave:
+    commands:
+    - mm m spawn Chunin 5 world3,643,66,-336
+    timer: 300
+  InformeShubaku:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO INFORME SHUBAKU
+  InformeTanzaku:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO INFORME TANZAKU
+  LobosPuñoSuave:
+    commands:
+    - mm m spawn Lobo 6 world3,831,94,-432
+    timer: 300
+  MatarUnMob:
+    commands:
+    - mm m Spawn Bandido 1 World3,904,68,-180
+  Matar1Mob:
+    commands:
+    - mm m spawn Bandido 1 World3,904,68,-180
+  SicariosSharingan3:
+    commands:
+    - mm m spawn Sicario 6 world3,918,69,-185
+    timer: 300
+  CarcelShiroganeVSMarioneta:
+    commands:
+    - mm m spawn Marioneta 3 world3,-442,62,1046
+  CarcelShiroganeVSMarionetaV:
+    commands:
+    - mm m spawn MarionetaV 1 world3,-419,49,1046
+  Historia0: {}
+  historia0t:
+    commands:
+    - warp historia0 <player>
+  historia2ir:
+    commands:
+    - warp capitulo2 <player>
+    - mm m spawn Mizuki 1,kamuidefi,1573,5,1447
+  historia1f:
+    fail-quest: true
+    commands:
+    - qa quit <player> capitulo 1
+    timer: 120
+    cancel-timer: true
+  HilosDeChakraVSAstilla1:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PLANTA ASTILLA
+    teleport-location: world 42.0 77.0 1030.0
+  HilosDeChakraVSAstilla2:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PLANTA ASTILLA
+    teleport-location: world 15.0 90.0 1026.0
+  historia2f:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 2
+    timer: 120
+  historia3f:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 3
+    timer: 120
+  Historia4f:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 4
+    timer: 120
+  Historia17t:
+    commands:
+    - warp capitual17 <player>
+  historia17:
+    commands:
+    - warp capitulo17 <player>
+  Historia18:
+    commands:
+    - warp capitulo18 <player>
+  historia19:
+    commands:
+    - warp capitulo19 <player>
+  AbejorrosVSJounin:
+    commands:
+    - mm m spawn Jounin 3 world3,1886,68,24
+  historia20:
+    commands:
+    - warp capitulo20 <player>
+  historia21:
+    commands:
+    - warp capitulo21 <player>
+  PanalVSAbeja1:
+    commands:
+    - mm m spawn AbejaReina 1 world3,1893,68,232
+  PanalVSAbeja2:
+    commands:
+    - mm m spawn AbejaReina 1 world3,1889,72,95
+  PanalVSAbeja3:
+    commands:
+    - mm m spawn AbejaReina 1 world3,1888,68,-11
+  PanalVSAbeja4:
+    commands:
+    - mm m spawn AbejaReina 1 world3,1770,68,-30
+  PanalVSTeleport:
+    commands:
+    - tp <player> -2869 70 -50
+  PanalVSAbeja2B:
+    commands:
+    - mm m spawn AbejaReina 1 world3,1889,72,95
+  PanalVSTeleport2:
+    teleport-location: world -2869.0 69.0 -50.0
+  Historia22:
+    commands:
+    - warp capitulo22 <player>
+  historia23:
+    commands:
+    - warp capitulo23 <player>
+  historia24:
+    commands:
+    - warp capitulo24 <player>
+  Historia25:
+    commands:
+    - warp capitulo25 <player>
+  BandidosJuugo25:
+    commands:
+    - mm m spawn Bandido 5 world3,1172,63,-38
+    timer: 180
+  SujetoPruebasJuugo25:
+    commands:
+    - mm m spawn SujetoPruebas 6 world3,1351,22,-110
+    timer: 180
+  GuardiaJuugo25:
+    commands:
+    - mm m spawn GuardiaSilver 1 world3,1352,21,-110
+    timer: 180
+  EfectoJuugo25:
+    potion-effect-types:
+    - BLINDNESS
+    - SLOW
+    potion-effect-durations:
+    - 80
+    - 80
+    potion-effect-amplifiers:
+    - 10
+    - 10
+  Tp1Juugo25:
+    commands:
+    - tp <player> 1420 22 -98
+  tp2Juugo25:
+    commands:
+    - tp <player> 1422 22 -123
+  tpjuugo:
+    teleport-location: world3 1420.0 21.0 -98.0
+  JuugoTp1:
+    teleport-location: world3 1420.0 22.0 -98.0
+  Juugo25Tp2:
+    teleport-location: world3 1422.0 21.0 -124.0
+  Juugo25Tp3:
+    teleport-location: world3 1210.0 63.0 24.0
+  TiempoJuugo25:
+    timer: 50
+  TransformadosJuugo50:
+    commands:
+    - mm m spawn Transformado 5 world3,1345,21,-110
+    timer: 180
+  ExperimentoFallidoJuugo:
+    commands:
+    - mm m spawn ExperimentoFallido 1 world3,1337,32,-56
+    timer: 120
+  EfectosJuugo50:
+    potion-effect-types:
+    - POISON
+    potion-effect-durations:
+    - 200
+    potion-effect-amplifiers:
+    - 1
+    teleport-location: world3 1397.0 22.0 -62.0
+  TpJuugo50:
+    teleport-location: world3 1393.0 21.0 -61.0
+  KabutoJuugo:
+    commands:
+    - mm m spawn KabutoJuugo 1 world3,1392,21,-59
+  PanalVSTeleport3:
+    teleport-location: world -2869.0 70.0 -50.0
+  historia26:
+    commands:
+    - warp capitulo26 <player>
+  PanalVSTeleport4:
+    teleport-location: world -2868.0 70.0 -48.0
+  historia27:
+    commands:
+    - warp capitulo27 <player>
+  historia28:
+    commands:
+    - warp capitulo28 <player>
+  historia29:
+    commands:
+    - warp capitulo29 <player>
+  Historia30:
+    commands:
+    - warp capitulo30 <player>
+  EstomagoSapo1Sennin25:
+    potion-effect-types:
+    - HEALTH_BOOST
+    potion-effect-durations:
+    - 100
+    potion-effect-amplifiers:
+    - 5
+    teleport-location: world 30.0 80.0 963.0
+  EstomagoSapo2Sennin25:
+    teleport-location: world 30.0 89.0 963.0
+  MonteSapoSennin25:
+    teleport-location: world 5951.0 72.0 593.0
+  RayoSennin25:
+    lightning-strikes:
+    - world3 1672.0 49.0 -482.0
+    - world3 1672.0 49.0 -482.0
+    - world3 1672.0 49.0 -480.0
+    - world3 1675.0 49.0 -481.0
+  ZetsusSennin25:
+    commands:
+    - mm m spawn Zetsu3 3 world3,1673,51,-480
+  Nauseas10s:
+    potion-effect-types:
+    - CONFUSION
+    potion-effect-durations:
+    - 200
+    potion-effect-amplifiers:
+    - 3
+  Sennin25Nextstage:
+    commands:
+    - qa nextstage <player> sennin 25%
+  GolpeSennin25:
+    potion-effect-types:
+    - HARM
+    potion-effect-durations:
+    - 20
+    potion-effect-amplifiers:
+    - 1
+  DañoSennin25:
+    potion-effect-types:
+    - WITHER
+    potion-effect-durations:
+    - 20
+    potion-effect-amplifiers:
+    - 1
+  InsectosSennin50:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: INSECTO
+        internal: H4sIAAAAAAAAAE2PS26DMBiE/1aqRFGP0S2SeUZedFGVlBjFpk3Cw+wIGBEwaZRABJyrB6yXndWMvpnF6AA6vOy7Ucqv6099kkKDR1LBK3KQg0uMjMoW2HA8yzRwWdQGUiqKwlphB+ugq9FFXIeTuD2DNohpGK/ipgPAgwZPSSFHAb9iDlGeNajKQlnOxFP5sEcyIu1lRc7JfPwgHukV37x72xn/67pDkbqS22GTn7/HY5+grb2TYrMzyz6+M7+caPrZ8j5GLEg61iYdt7jJemrTNrYiv7Ppgdt0KV0arBFPqZWndGI+QZHPWhqQhS9hQ/2mY8qxdu3yOcR1ht7UA/gDorVrcRwBAAA=
+  InsectoSennin50:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: INSECTO
+  SaposSennin50:
+    commands:
+    - mm m spawn Sapo 12 world,5894,33,686
+    timer: 300
+  SapoPuente1:
+    commands:
+    - mm m spawn SapoJ 2 world,5939,127,637
+  SapoPuente2:
+    commands:
+    - mm m spawn SapoJ 2 world,5931,127,629
+  PaSennin:
+    commands:
+    - mm m spawn PaSennin 1 world,5894,33,686
+  MiniSennin:
+    potion-effect-types:
+    - SPEED
+    - HEAL
+    - JUMP
+    potion-effect-durations:
+    - 400
+    - 400
+    - 400
+    potion-effect-amplifiers:
+    - 3
+    - 5
+    - 3
+  TpSennin50:
+    teleport-location: world 5952.0 69.0 590.0
+  SapoPuente4:
+    commands:
+    - mm m spawn SapoJ 2 world,5923,126,619
+  IrAlMonteSapo:
+    teleport-location: world 5939.0 71.0 593.0
+  SapoExtensionHueso:
+    commands:
+    - mm m spawn Sapo 6 world3,723,63,-573
+    timer: 300
+  BandidosExtensionHueso:
+    commands:
+    - mm m spawn Bandido 4 world3,2055,64,-267
+    timer: 300
+  BandidosHuesoDoble:
+    commands:
+    - mm m spawn Bandido 5 world,303,17,1057
+    timer: 300
+  Tp1DefensaArena:
+    teleport-location: world3 -679.0 42.0 1233.0
+  Tp2DefensaArena:
+    commands:
+    - mm m spawn GuardiaSilver 1 world3,-678,63,1226
+    teleport-location: world3 -679.0 64.0 1233.0
+    timer: 300
+  DefensaArenaTp1:
+    teleport-location: world3 -679.0 42.0 1233.0
+  Tnt:
+    commands:
+    - tnt
+  ArcillaC1:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 3
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: COMPONENTE ARCILLA
+        lore:
+        - Quest Item
+  MuñecoArcillaC1:
+    commands:
+    - mm m spawn MuñecoArcilla 1 world3,1410,64,364
+  ArcillaMoldeadaC1:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      amount: 3
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: COMPONENTE ARCILLA MOLDEADA
+        lore:
+        - Quest Item
+  ExplosionC1:
+    explosions:
+    - world3 1408.0 62.0 368.0
+    - world3 1409.0 62.0 369.0
+  RayoBolaElectrica:
+    lightning-strikes:
+    - world3 1005.0 186.0 1024.0
+    - world3 1003.0 184.0 1023.0
+  Historia1f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 1
+    timer: 300
+  Historia1f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 1
+    timer: 2000
+  Historia2f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 2
+    timer: 300
+  Historia2f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 2
+    timer: 2000
+  Historia3f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 3
+    timer: 300
+  Historia3f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 3
+    timer: 2000
+  Historia4f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 4
+    timer: 300
+  Historia4f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 4
+    timer: 2000
+  Historia5f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 5
+    timer: 300
+  Historia5f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 5
+    timer: 2000
+  Historia6f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 6
+    timer: 300
+  Historia6f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 6
+    timer: 2000
+  Historia7f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 7
+    timer: 300
+  Historia7f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 7
+    timer: 2000
+  Historia8f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 8
+    timer: 300
+  Historia8f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 8
+    timer: 2000
+  Historia9f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 9
+    timer: 300
+  Historia9f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 9
+    timer: 2000
+  Historia10f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 10
+    timer: 300
+  Historia10f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 10
+    timer: 2000
+  Historia11f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 11
+    timer: 300
+  Historia11f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 11
+    timer: 2000
+  Historia12f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 12
+    timer: 300
+  Historia12f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 12
+    timer: 2000
+  Historia13f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 13
+    timer: 300
+  Historia13f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 13
+    timer: 2000
+  Historia14f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 14
+    timer: 300
+  Historia14f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 14
+    timer: 2000
+  Historia15f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 15
+    timer: 300
+  Historia15f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 15
+    timer: 2000
+  Historia16f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 16
+    timer: 300
+  Historia16f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 16
+    timer: 2000
+  Historia17f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 17
+    timer: 300
+  Historia17f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 17
+    timer: 2000
+  Historia18f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 18
+    timer: 300
+  Historia18f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 18
+    timer: 2000
+  Historia19f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 19
+    timer: 300
+  Historia19f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 19
+    timer: 2000
+  Historia20f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 20
+    timer: 300
+  Historia20f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 20
+    timer: 2000
+  Historia21f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 21
+    timer: 300
+  Historia21f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 21
+    timer: 2000
+  Historia22f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 22
+    timer: 300
+  Historia22f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 22
+    timer: 2000
+  Historia23f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 23
+    timer: 300
+  Historia23f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 23
+    timer: 2000
+  Historia24f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 24
+    timer: 300
+  Historia24f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 24
+    timer: 2000
+  Historia25f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 25
+    timer: 300
+  Historia25f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 25
+    timer: 2000
+  Historia26f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 26
+    timer: 300
+  Historia26f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 26
+    timer: 2000
+  Historia27f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 27
+    timer: 300
+  Historia27f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 27
+    timer: 2000
+  Historia28f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 28
+    timer: 300
+  Historia28f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 28
+    timer: 2000
+  Historia29f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 29
+    timer: 300
+  Historia29f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 29
+    timer: 2000
+  Historia30f1:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 30
+    timer: 300
+  Historia30f2:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 30
+    timer: 2000
+  TiempoHuirJuugo:
+    timer: 100
+  DañoKimimaro:
+    potion-effect-types:
+    - WITHER
+    potion-effect-durations:
+    - 20
+    potion-effect-amplifiers:
+    - 6
+  ChuninDefensaKaguya:
+    commands:
+    - mm m spawn Chunin 7 world3,629,58,589
+    timer: 300
+  ChuninDefensaKaguya1:
+    commands:
+    - mm m spawn Chunin 5 world3,632,58,-589
+    timer: 300
+  SecuestroJuugo25:
+    potion-effect-types:
+    - SLOW
+    - BLINDNESS
+    potion-effect-durations:
+    - 200
+    - 200
+    potion-effect-amplifiers:
+    - 10
+    - 10
+    teleport-location: world3 1168.0 66.0 0.0
+  DesertoresParpa:
+    commands:
+    - mm m spawn Desertor 4 world3,385,65,648
+    timer: 300
+  Historia1f1m:
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 1
+    timer: 200
+    cancel-timer: true
+  '12':
+    commands:
+    - qa quit <player> Capitulo 1
+    timer: 5
+  '13':
+    fail-quest: true
+    commands:
+    - qa quit <player> Capitulo 1
+    timer: 10
+    cancel-timer: true
+  '11':
+    fail-quest: true
+    commands:
+    - qa quit <player> prueba
+    timer: 10
+  '10':
+    commands:
+    - qa quit <player> prueba
+    timer: 10
+  CuevaRocaAsesino:
+    commands:
+    - mm m spawn Asesino world,124,34,-788
+  ZetsuSennin25:
+    commands:
+    - mm m spawn ZetsuSilver 4 world3,1673,50,-481
+  Apuesta Tsunade:
+    message: '&6&lLady Tsunade&f&r: Fallaste, ese es el numero equivocado.'
+    fail-quest: true
+  ClonDeSombraSerpientes:
+    commands:
+    - mm m spawn Serpiente 7 world3,1277,84,-1650
+  ClonDeSombraAbejas:
+    commands:
+    - mm m spawn AbejitasR 7 world3,1246,74,-1726
+  ClonDeSombraOsos:
+    commands:
+    - mm m spawn Oso 5 world3,1199,73,-1757
+  ClonDeSombraBandido:
+    commands:
+    - mm m spawn Bandido 1 world3,1365,115,-1719
+  ClonDeSombraPergamino:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_NUGGET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: PERGAMINO PROHIBIDO
+  ClonDeSombraAvestruz:
+    commands:
+    - mm m spawn Avestruz 1 world3,1364,116,-1715
