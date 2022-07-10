@@ -4628,3 +4628,6 @@ actions:
   KushinaCurarJugador:
     commands:
     - heal <palyer>
+  KushinaCurarPlayer:
+    commands:
+    - heal <player>
